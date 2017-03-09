@@ -1,5 +1,5 @@
 {
-  "name": "multi-env-boilerplate",
+  "name": "multi-env-react-boilerplate",
   "version": "1.0.0",
   "description": "A basic boilerplate for react and webpack2 with multi env support.",
   "main": "index.js",
