@@ -1,10 +1,13 @@
 
+import "babel-polyfill";
+
 import React from 'react';
 import { render } from 'react-dom';
 
+import Application from './containers/Application';
 
 
 render(
-    <div>hello world. 😀</div>,
+    <Application / >,
     document.getElementById('root')
 );

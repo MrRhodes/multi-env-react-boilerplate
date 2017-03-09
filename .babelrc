@@ -5,8 +5,13 @@
                 "ie": 9
             },
             "modules": false,
-            "loose": true
+            "loose": true,
+            "useBuiltIns": true,
+            "debug": true
         }],
         "react"
+    ],
+    "plugins": [
+        "transform-class-properties"
     ]
 }
