@@ -1,0 +1,25 @@
+{
+  "name": "multi-env-boilerplate",
+  "version": "1.0.0",
+  "description": "A basic boilerplate for react and webpack2 with multi env support.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --colors"
+  },
+  "keywords": [],
+  "author": "Stephen Rhodes <iammrrhodes@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-loader": "^6.4.0",
+    "babel-preset-env": "^1.2.1",
+    "babel-preset-react": "^6.23.0",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
