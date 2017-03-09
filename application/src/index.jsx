@@ -5,6 +5,6 @@ import { render } from 'react-dom';
 
 
 render(
-    <div>hello you.... sdsd.</div>,
+    <div>hello world. 😀</div>,
     document.getElementById('root')
 );
