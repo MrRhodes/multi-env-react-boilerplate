@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 
-
 export default class Application extends Component {
     
     state = {
@@ -10,21 +9,23 @@ export default class Application extends Component {
     
     componentDidMount() {
         
+        const { greeting } = config;
+        
         new Promise(resolve => {
             
             setTimeout(resolve, 1000);
             
         }).then(data => {
-            this.setState({ isLoading: false });
+            this.setState({ isLoading: false, message: greeting });
         });
         
     }
     
     render() {
         
-        const { isLoading } = this.state;
+        const { isLoading, message } = this.state;
         
-        return <div>{isLoading ? 'Loading' : 'Hello World 🌎'}</div>;
+        return <div>{isLoading ? 'Loading' : message }</div>;
         
     }
     

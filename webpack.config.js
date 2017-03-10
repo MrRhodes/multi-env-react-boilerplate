@@ -14,6 +14,10 @@ const paths = {
     assets: path.join(__dirname, './application/assets')
 };
 
+const config = {
+    greeting: 'Hello World 🌎'
+};
+
 const plugins = [
     
     new webpack.optimize.CommonsChunkPlugin({
@@ -26,6 +30,10 @@ const plugins = [
         template: path.join(paths.app, 'index.html'),
         path: paths.build,
         filename: 'index.html',
+    }),
+    
+    new webpack.DefinePlugin({
+        config: JSON.stringify(config)
     })
     
 ];

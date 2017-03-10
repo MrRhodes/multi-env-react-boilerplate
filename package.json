@@ -4,7 +4,8 @@
   "description": "A basic boilerplate for react and webpack2 with multi env support.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --colors"
+    "start2": "webpack-dev-server --colors",
+    "start": "node application/server"
   },
   "keywords": [],
   "author": "Stephen Rhodes <iammrrhodes@gmail.com>",
@@ -21,6 +22,7 @@
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
+    "express": "^4.15.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   }
