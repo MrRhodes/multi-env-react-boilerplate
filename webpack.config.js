@@ -34,7 +34,10 @@ const plugins = [
     
     new webpack.DefinePlugin({
         config: JSON.stringify(config)
-    })
+    }),
+    
+    // new webpack.HotModuleReplacementPlugin(),
+    // new webpack.NoEmitOnErrorsPlugin()
     
 ];
 
@@ -57,7 +60,10 @@ module.exports = {
     context: paths.source,
     
     entry: {
-        js: './index.jsx',
+        js: [
+            './index.jsx',
+            // 'webpack-hot-middleware/client'
+        ],
         vendor: [
             // 'babel-polyfill',
             // 'es6-promise',
