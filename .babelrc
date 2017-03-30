@@ -7,7 +7,7 @@
             "modules": false,
             "loose": true,
             "useBuiltIns": true,
-            "debug": true
+            "debug": false
         }],
         "react"
     ],

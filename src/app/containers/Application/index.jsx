@@ -9,7 +9,7 @@ export default class Application extends Component {
     
     componentDidMount() {
         
-        const { greeting } = config;
+        const { API_ENDPOINT: greeting } = config;
         
         new Promise(resolve => {
             
@@ -25,7 +25,12 @@ export default class Application extends Component {
         
         const { isLoading, message } = this.state;
         
-        return <div>{isLoading ? 'Loading' : message }</div>;
+        return (
+            <div>
+                <div>{isLoading ? 'Loading' : message }</div>
+                <div>Running "{APP_ENV}" config in "{NODE_ENV}" environment</div>
+            </div>
+        );
         
     }
     
