@@ -4,7 +4,7 @@
   "description": "A basic boilerplate for react and webpack2 with multi env support.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server",
+    "start": "nodemon server",
     "serve": "npm run build && node server",
     "build": "rm -rf build && webpack -p --progress"
   },
